@@ -1,0 +1,71 @@
+.eventBoxHolder{
+  position: relative;
+}
+.eventBox{
+  /* overflow: hidden; */
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+}
+
+.events{
+  display: flex;
+  gap: 0.1rem;
+}
+
+.events .sheet{
+  height: 100%;
+  padding: 0 15px;
+  background: rgba(0, 0, 0, 0.516);
+  background: rgba(255, 255, 255, 0.537);
+  background: #fdcf6f;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: wheat;
+  color: black;
+  cursor: pointer;
+}
+.events .more{
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.667);
+}
+.events .sheet h3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event{
+  width: 170px;
+  height: 130px;
+  min-width: 170px;
+  padding: 15px;
+  background: #e8eff9;
+  background: #14121f;
+  color: white;
+}
+.event{
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+}
+.event p{
+  display: flex;
+  flex-direction: column;
+}
+.event strong{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.event small{
+  color: wheat;
+}
+.event legend{
+  font-size: 1.2rem;
+}

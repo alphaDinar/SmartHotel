@@ -1,0 +1,66 @@
+.checkInBox{
+  align-items: flex-start;
+}
+.checkIns{
+  width: 100%;
+  gap: 0.6rem;
+  /* border: 2px solid black; */
+}
+
+.checkIns a{
+  display: grid;
+  width: 100%;
+  padding: 5px 0;
+  grid-template-columns: 15px 1.2fr 0.8fr 0.5fr 1.2fr;
+  align-items: center;
+  background: white;
+  gap: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: var(--shadow1);
+  color: black;
+} 
+.checkIns a .payment{
+  display: flex;
+  justify-content: space-between;
+}
+.checkIns a > *{
+  padding: 3px 0;
+  /* margin: auto; */
+}
+.checkIns a sub{
+  height: 100%;
+}
+.checkIns a p{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.checkIns a p span:nth-child(1){
+  max-height: 25px;
+  -webkit-line-clamp: 1;
+}
+.checkIns a p span:nth-child(2){
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.checkIns a h6{
+  margin: auto;
+  font-weight: normal;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.checkIns a legend{
+  background: orange;
+  color: white;
+  margin: auto;
+  padding: 3px;
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: center;
+  border-radius: 3px;
+}

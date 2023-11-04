@@ -1,0 +1,154 @@
+.top{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.addBox{
+  background: #fdcf6f;
+  padding: 20px;
+  background: rgb(57, 139, 221);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.addBox i{
+  font-size: 3rem;
+}
+.addBox strong{
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.capacityBox{
+  padding: 15px;
+  display: flex;
+  background: white;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+}
+.capacityBox section{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.capacityBox .chartBox{
+  padding: 5px;
+}
+.capacityBox .chart{
+  width: 110px;
+  height: 110px;
+  border: 1px solid lightgray;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.capacityBox .chart span{
+  position: absolute;
+  font-size: 2rem;
+  color: var(--pass);
+}
+.capacityBox article {
+  display: flex;
+  flex-direction: column;
+}
+.capacityBox article p{
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.capacityBox article p sub{
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  display: block;
+  background: black;
+}
+.capacityBox article p small{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.capacityBox article p span{
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.capacityBox article hr{
+  width: 100%;
+  margin: 3px 0;
+  border-top: 1px dotted black;
+}
+
+.main .mid{
+  display: flex;
+  flex-wrap: wrap;
+}
+.midLeft{
+  display: flex;
+  width: 100%;
+  gap: 0.3rem;
+}
+
+.roomsLeftBox{
+  background: #0a5f59;
+  color: white;
+  flex: 1;
+  padding: 20px 15px;
+}
+.roomsLeftBox article p{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.roomsLeftBox article p span, .roomsLeftBox article p small{
+  width: max-content;
+}
+
+.midLeft .guestBox, .midLeft .areasBox{
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.midLeft .guestBox{
+  background: #fdcf6f;
+}
+.midLeft .areasBox{
+  background: salmon;
+  color: white;
+}
+
+.midLeft .guestBox strong, .midLeft .areasBox strong{
+  font-size: 2rem;
+}
+
+.main .low{
+  display: flex;
+}
+
+
+
+@media all and (max-width:1050px){
+  .midLeft{
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width:550px){
+  .top{
+    flex-direction: column-reverse;
+  }
+  .midLeft > *{
+    flex: 1;
+  }
+  .areasBox > *{
+    width: max-content;
+  }
+}

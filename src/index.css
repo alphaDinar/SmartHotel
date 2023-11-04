@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --bg : #fffcf1;
+  --bg2 : #faf8eb;
+  --fail : tomato;
+  /* --fail : salmon; */
+  --pass : springgreen;
+  --pass : #49a063;
+  --paddingTD : 5vh;
+  --mH : 90vh;
+  --dark : #343434;
+  --shadow1 :  rgba(4, 3, 3, 0.16) 0px 1px 4px;
+  /* --mW : 80%; */
+}
+
+body{
+  background: var(--bg);
+}
+
+li{
+  list-style: none;
+}
+
+h3 sub {
+  width: 40px;
+  height: 3px;
+  background: black;
+  display: block;
+}
+
+input[type='number']::-webkit-inner-spin-button{
+  display: none;
+}
+
+.cut{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.bold{
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+}
+
+.searchBox{
+  border: 1px solid darkgray;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  background: var(--bg2);
+  padding: 0 5px;
+  display: flex;
+  max-height: 40px;
+  justify-content: space-between;
+}
+.searchBox input[type='text']{
+  width: 210px;
+}
+.searchBox input[type='number']{
+  width: 80px;
+  text-align: center;
+}
+.searchBox input{
+  height: 30px;
+  padding: 5px 15px;
+  background: transparent;
+  border-radius: 40px;
+}
+
+.cutScroll::-webkit-scrollbar{
+  display: none;
+}

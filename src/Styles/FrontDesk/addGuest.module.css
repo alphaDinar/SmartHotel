@@ -1,0 +1,130 @@
+.formBox{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formBox form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.formBox form article{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formBox form p{
+  display: flex;
+  flex-direction: column;
+}
+.formBox p input, .formBox p select{
+  padding: 10px;
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  background: var(--bg2);
+}
+
+.date{
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.roomBox{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.roomBox .rooms{
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.roomBox div{
+  border: 1px solid darkgray;
+  border-radius: 40px;
+  background: var(--bg2);
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.roomBox div input{
+  padding: 5px;
+  background: transparent;
+}
+
+
+.roomBox{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.roomBox legend{
+  background: var(--dark);
+  transition: 0.3s ease;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 60px;
+  min-height: 60px;
+  justify-content: center;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+.roomBox legend i{
+  font-size: 1.2rem;
+}
+
+.totalBox{
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 0.3fr 0.3fr 1fr;
+}
+.totalBox div, .totalBox .createGuest{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 20px;
+  flex-direction: column;
+  color: white;
+}
+.totalBox div{
+  background: dodgerblue;
+}
+.totalBox .createGuest{
+  background: var(--pass);
+  flex: 1;
+  color: white;
+  cursor: pointer;
+}
+.totalBox div strong{
+  font-size: 1.8rem;
+}
+
+@media all and (max-width:650px){
+  .formBox form article{
+    grid-template-columns: 1fr;
+  }
+  .date{
+    font-size: 1rem;
+  }
+  .totalBox{
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .totalBox .createGuest{
+    flex: 1;
+    grid-column: 1/3;
+  }
+}

@@ -1,0 +1,175 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.boxLis {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.boxLi {
+  width: 50%;
+  /* background: salmon !important; */
+  cursor: pointer;
+}
+
+.wrapper{
+  width: 100%;
+  min-height: var(--mH);
+  display: flex;
+}
+
+.dashMain{
+  width: 65%;
+  padding: var(--paddingTD) 5%;
+  display: flex;
+  min-height: var(--mH);
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mainNav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainNav sup{
+  display: none;
+}
+.mainNav nav{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.mainNav nav a{
+  position: relative;
+}
+.mainNav nav a legend{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: salmon;
+  color: white;
+  font-size: 0.8rem;
+  min-width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidePanel{
+  width: 22%;
+  padding: var(--paddingTD) 1.5% 0 1.5%;
+  background: var(--bg2);
+  z-index: 200;
+  border-left: 1px dotted darkgray;
+}
+
+.sidePanel sup{
+  display: none;
+}
+
+@media all and (max-width:1250px){
+  .sidePanel{
+    position: fixed;
+    right: -391px;
+    width: 350px;
+    padding: var(--paddingTD) 20px;
+    overflow-x: visible;
+    overflow-y: visible;
+    top: 0;
+    transition: 0.4s ease;
+  }
+  .sidePanel.change{
+    right: 0;
+  }
+  .sidePanel sup{
+    display: flex;
+    top: 0;
+    position: absolute;
+    right: 100%;
+    padding: 3px;
+    background: var(--dark);
+    color: var(--bg);
+    cursor: pointer;
+  }
+  .dashMain{
+    width: 90%;
+  }
+}
+
+@media all and (max-width:1050px){
+  .dashMain{
+    gap: 1rem;
+  }
+}
+
+@media all and (max-width:850px){
+  .mainNav{
+    /* border: 2px solid red; */
+    width: max-content;
+    width: 120px;
+    background: dodgerblue;
+    background: var(--dark);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    transition: 0.4s ease;
+    left: -160px;
+  }
+  .mainNav.change{
+    left: 0;
+  }
+  .mainNav sup{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    cursor: pointer;
+    padding: 5px;
+    background: dodgerblue;
+    background: var(--dark);
+    color: var(--bg2);
+  }
+  .mainNav nav{
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: flex-start;    
+    color: white;
+  }
+  .mainNav nav a{
+    color: white;
+  }
+}
+
+@media all and (max-width:550px){
+  .sidePanel sup{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+  }
+  .sidePanel{
+    width: calc(90%);
+    padding: var(--paddingTD) 5%;
+    right: -100%;
+    height: auto;
+    border: none;
+  }
+  .sidePanel.change sup{
+    top: 0;
+    left: 0;
+  }
+}
+
+.testBox{
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border: 2px solid salmon;
+}
